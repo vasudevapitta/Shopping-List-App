@@ -116,7 +116,6 @@ $("#masterCheckbox").click(function(){
       $("html").find(".itemContainer").remove();
       window.location.reload(true); 
     }
-    
   });
            
 });

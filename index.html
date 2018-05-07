@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Shopping List App</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Shopping List App</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="scripts.js"></script>
+      <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
 <div class="main">
-  <div class="left">
-  </div>
-    <div class="middle">
-<div class="top">
-  <div class="topEighty">
-<h1 class="textUnselectable">SHOPPING LIST</h1>
-<h4 class="textUnselectable">Enter Item:</h4>
-<input type="text" id="itemEntry" placeholder="Enter Shopping Item..." autofocus autocomplete="on"></input>
+            <div class="left"></div><!--div left-->
 
-<input type="number"  placeholder="Qty" min="1" max="1000" id="quantity"></input>
- 
-      <!--Make sure the below "input list" value is the same as the "datalist id" value-->
-      <!--
-<input list="unitsOfMeasurement" id="dropdown">
-  <datalist id="unitsOfMeasurement">
-  <option value=""></option>
-  <option value="lb"></option>
-  <option value="kg"></option>
-  <option value="oz"></option>
-  <option value="ltr"></option>
-  <option value="gallon"></option>
-  <option value="dozen"></option>
-  <option value="bag"></option>
-  <option value="box"></option>
-  <option value="unit"></option>
-  <option value="jar"></option>
- </datalist>
--->
-      <select id="unitsOfMeasurement">
-  <option value=""></option>
-  <option value="lb">lb</option>
-  <option value="kg">kg</option>
-  <option value="oz">oz</option>
-  <option value="ltr">ltr</option>
-  <option value="gallon">gallon</option>
-  <option value="dozen">dozen</option>
-  <option value="bag">bag</option>
-  <option value="box">box</option>
-  <option value="unit">unit</option>
-  </select>
-      
-<button type="submit" id="addButton" >Add to List</button>
-<br>
-</div>
-  <div class="topTwenty">
-    <div class="leftMasterCheckBox" id="masterCheckbox">
-     
-      <input type="checkbox" class="masterCheckbox" title="Check or Uncheck All Items">
-      </div>
-    <div class="middleEditButton" title="Edit">
-      <i style="font-size:24px" class="fa" id="edit" >&#xf044;</i>
-      </div>
-    <div class="rightMasterCloseButton"><div class="masterCloseButton" id="masterCloseButton" title="Remove All Items"><b>
-      &#10006</b></div>
-    </div>
- </div>
- </div>
-<div class="bottom">
-  </div>  
-    </div>
-      <div class="right">
-        </div>
-         </div>
-  </body>
+            <div class="middle">
+                      <div class="top">
+                                <div class="topEighty">
+                                      <h1 class="textUnselectable">SHOPPING LIST</h1>
+                                      <h4 class="textUnselectable">Enter Item:</h4>
+                                      <input type="text" id="itemEntry" placeholder="Enter Shopping Item..." autofocus autocomplete="on"></input>
+
+                                      <input type="number"  placeholder="Qty" min="1" max="1000" id="quantity"></input>
+                                     
+                                          <!--Make sure the below "input list" value is the same as the "datalist id" value-->
+                                          <!--
+                                    <input list="unitsOfMeasurement" id="dropdown">
+                                      <datalist id="unitsOfMeasurement">
+                                      <option value=""></option>
+                                      <option value="lb"></option>
+                                      <option value="kg"></option>
+                                      <option value="oz"></option>
+                                      <option value="ltr"></option>
+                                      <option value="gallon"></option>
+                                      <option value="dozen"></option>
+                                      <option value="bag"></option>
+                                      <option value="box"></option>
+                                      <option value="unit"></option>
+                                      <option value="jar"></option>
+                                     </datalist>
+                                    -->
+                                          <select id="unitsOfMeasurement">
+                                      <option value=""></option>
+                                      <option value="lb">lb</option>
+                                      <option value="kg">kg</option>
+                                      <option value="oz">oz</option>
+                                      <option value="ltr">ltr</option>
+                                      <option value="gallon">gallon</option>
+                                      <option value="dozen">dozen</option>
+                                      <option value="bag">bag</option>
+                                      <option value="box">box</option>
+                                      <option value="unit">unit</option>
+                                      </select>
+                                          
+                                    <button type="submit" id="addButton" >Add to List</button>
+                                    <br>
+                              </div><!--div topEighty-->
+
+                              <div class="topTwenty">
+                                        <div class="leftMasterCheckBox" id="masterCheckbox">
+                                        <input type="checkbox" class="masterCheckbox" title="Check or Uncheck All Items">
+                                        </div><!--div leftMasterCheckBox-->
+
+                                        <div class="middleEditButton" title="Edit">
+                                        <i style="font-size:24px" class="fa" id="edit" >&#xf044;</i>
+                                        </div> <!--div middleEditButton-->
+
+                                        <div class="rightMasterCloseButton"><div class="masterCloseButton" id="masterCloseButton" title="Remove All Items"><b>
+                                              &#10006</b></div><!--div masterCloseButton--></div><!-- div rightMasterCloseButton-->
+                              </div><!-- div topTwenty-->
+                    </div><!--div top-->
+
+          <div class="bottom"></div><!--div bottom--> 
+          </div><!--div middle-->
+          <div class="right"></div><!--div right-->
+
+</div><!-- div main -->
+<script src="scripts/scripts.js"></script>
+</body>
 </html>

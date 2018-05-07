@@ -1,6 +1,15 @@
- @media screen and (min-width: 200px) and (max-width: 1050px) {
-.middle {width: 100%;}
-.left, .right {width: 0%;}
+ /*the below styles apply when the width < 1051px */
+ @media screen and (max-width: 1051px) {
+.middle {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(248, 215, 85, 0.9);
+}
+
+  .left,
+  .right {
+    width: 0%;
+  }
 }
   @media screen and (-webkit-min-device-pixel-ratio:0) { 
   select,
@@ -8,11 +17,25 @@
   input {
     font-size: 16px;
   }
-}  
+} 
 
+ /*the below styles apply when the width >= 1051px */
+ @media screen and (min-width: 1051px) {
+.middle {
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgba(248, 215, 85, 0.9);
+}
+
+  
+  .left,
+  .right {
+    width: 10%;
+  }
+}
  
 body {
-  background-image: url("http://i68.tinypic.com/s1oxvs.jpg"); 
+  background-image: url("../images/backgroundimage.jpg"); 
   text-align: center;
   font: normal normal 20px/150% helvetica, open-sans;
 }
@@ -21,12 +44,14 @@ body {
 #dropdown {
   width: 50px;
 }
+
  .textUnselectable {
   -webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
+
 .masterCheckbox {
   float: left;
   width: 50px;
@@ -37,16 +62,19 @@ user-select: none; /* Standard */
   float: right;
   width: 50px;
 }
-.masterCheckbox, .masterCloseButton {
+
+.masterCheckbox,
+.masterCloseButton {
   visibility: hidden;
 }
-.masterCheckbox show, 
-.masterCloseButton show {
+
+.masterCheckbox-show, 
+.masterCloseButton-show {
   visibility: visible;
 }
 
-
-.leftMasterCheckBox, .middleEditButton,
+.leftMasterCheckBox,
+.middleEditButton,
 .rightMasterCloseButton {
   width: 10%;
   height:100%;
@@ -75,7 +103,11 @@ user-select: none; /* Standard */
   height: 20%;
 }
 
-.bottom, .middle, .left, .right, .main {
+.bottom,
+.middle,
+.left,
+.right,
+.main {
   height:100%;
 }
 
@@ -84,7 +116,7 @@ user-select: none; /* Standard */
   height:100%;
 }
 
-.itemContainer{
+.itemContainer {
   padding: 0 6px;
 }
 /*
@@ -108,27 +140,20 @@ border: 0px solid #000000;
 hr {
   opacity: 0.3;
 }
+
 .main {
   width: 100%;
   display: flex;
 }
 
-.left, .right {
-  width: 10%;
-}
-
-.middle {
-  width: 80%;
-  border-radius: 5px;
-  background-color: rgba(248, 215, 85, 0.9);
-}
-
-.fa, editText {
+.fa {
   display: inline;
 }
+
 .content {
   width: 95%;
 }
+
 .close {
   display: inline;
   width: 5%;
@@ -147,15 +172,15 @@ visibility: hidden;
 .show {
 visibility: visible;
 }
-div.list {
-display:flex;
-max-width: 100%;
-border-radius: 5px;
-margin: 4px;
-padding: 10px;
-text-align: left;
-}
 
+div.list {
+  display:flex;
+  max-width: 100%;
+  border-radius: 5px;
+  margin: 4px;
+  padding: 10px;
+  text-align: left;
+}
 
 .list{
  /*
@@ -164,10 +189,14 @@ text-align: left;
  background-color: #ffffff;
 }
 
-#edit, .masterCheckbox, .masterCloseButton {
+#edit,
+.masterCheckbox,
+.masterCloseButton {
  cursor: pointer;
 }
-#edit:hover, #masterCloseButton:hover
+
+#edit:hover,
+#masterCloseButton:hover
  {
 color: #686868;
 }
@@ -179,7 +208,7 @@ label {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 label.para {
@@ -190,5 +219,5 @@ label.para {
 .remove {
   font-family: arial;
   display:inline;
-text-decoration: line-through;
+  text-decoration: line-through;
 }
