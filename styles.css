@@ -1,0 +1,194 @@
+ @media screen and (min-width: 200px) and (max-width: 1050px) {
+.middle {width: 100%;}
+.left, .right {width: 0%;}
+}
+  @media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}  
+
+ 
+body {
+  background-image: url("http://i68.tinypic.com/s1oxvs.jpg"); 
+  text-align: center;
+  font: normal normal 20px/150% helvetica, open-sans;
+}
+
+
+#dropdown {
+  width: 50px;
+}
+ .textUnselectable {
+  -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+.masterCheckbox {
+  float: left;
+  width: 50px;
+  height:20px;
+}
+
+#masterCloseButton {
+  float: right;
+  width: 50px;
+}
+.masterCheckbox, .masterCloseButton {
+  visibility: hidden;
+}
+.masterCheckbox show, 
+.masterCloseButton show {
+  visibility: visible;
+}
+
+
+.leftMasterCheckBox, .middleEditButton,
+.rightMasterCloseButton {
+  width: 10%;
+  height:100%;
+}
+
+.rightMasterCloseButton {
+  text-align:right;
+  padding-right: 27px;
+}
+
+.leftMasterCheckBox {
+  text-align:left;
+  padding-left: 20px;
+}
+
+.topEighty {
+  width: 100%;
+  height: 80%;
+}
+
+.topTwenty {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+
+.bottom, .middle, .left, .right, .main {
+  height:100%;
+}
+
+.main {
+  width:100%;
+  height:100%;
+}
+
+.itemContainer{
+  padding: 0 6px;
+}
+/*
+#itemEntry {
+  border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+}
+*/
+
+/*
+.top {
+  border-radius: 5px;
+  background-color: blue;
+  background-image: url("https://static01.nyt.com/images/2011/06/03/arts/LIST/LIST-jumbo.jpg");
+  background-position: 
+}
+*/
+
+hr {
+  opacity: 0.3;
+}
+.main {
+  width: 100%;
+  display: flex;
+}
+
+.left, .right {
+  width: 10%;
+}
+
+.middle {
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgba(248, 215, 85, 0.9);
+}
+
+.fa, editText {
+  display: inline;
+}
+.content {
+  width: 95%;
+}
+.close {
+  display: inline;
+  width: 5%;
+  transform: translate(500px;0px);
+}
+
+span {
+  font: normal normal 20px/150% helvetica, open-sans;
+  cursor: pointer;
+}
+
+.hide {
+visibility: hidden;
+}
+
+.show {
+visibility: visible;
+}
+div.list {
+display:flex;
+max-width: 100%;
+border-radius: 5px;
+margin: 4px;
+padding: 10px;
+text-align: left;
+}
+
+
+.list{
+ /*
+ opacity: 0.8;
+ */
+ background-color: #ffffff;
+}
+
+#edit, .masterCheckbox, .masterCloseButton {
+ cursor: pointer;
+}
+#edit:hover, #masterCloseButton:hover
+ {
+color: #686868;
+}
+
+label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  cursor: pointer;
+}
+
+label.para {
+  font-family: arial;
+  display:inline;
+}
+
+.remove {
+  font-family: arial;
+  display:inline;
+text-decoration: line-through;
+}
