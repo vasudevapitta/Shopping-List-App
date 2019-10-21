@@ -1,17 +1,28 @@
+.middle {
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgba(248, 215, 85, 0.9);
+  padding-bottom: 15px;
+}
+
+.left,
+.right {
+  width: 10%;
+}
+
  /*the below styles apply when the width < 1051px */
  @media screen and (max-width: 1051px) {
 .middle {
   width: 100%;
-  border-radius: 5px;
-  background-color: rgba(248, 215, 85, 0.9);
 }
 
-  .left,
-  .right {
+.left,
+.right {
     width: 0%;
   }
 }
-  @media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
   select,
   textarea,
   input {
@@ -19,33 +30,17 @@
   }
 } 
 
- /*the below styles apply when the width >= 1051px */
- @media screen and (min-width: 1051px) {
-.middle {
-  width: 80%;
-  border-radius: 5px;
-  background-color: rgba(248, 215, 85, 0.9);
-}
-
-  
-  .left,
-  .right {
-    width: 10%;
-  }
-}
- 
 body {
   background-image: url("../images/backgroundimage.jpg"); 
   text-align: center;
   font: normal normal 20px/150% helvetica, open-sans;
 }
 
-
 #dropdown {
   width: 50px;
 }
 
- .textUnselectable {
+.textUnselectable {
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
@@ -119,23 +114,6 @@ body {
 .itemContainer {
   padding: 0 6px;
 }
-/*
-#itemEntry {
-  border-radius: 5px 5px 5px 5px;
--moz-border-radius: 5px 5px 5px 5px;
--webkit-border-radius: 5px 5px 5px 5px;
-border: 0px solid #000000;
-}
-*/
-
-/*
-.top {
-  border-radius: 5px;
-  background-color: blue;
-  background-image: url("https://static01.nyt.com/images/2011/06/03/arts/LIST/LIST-jumbo.jpg");
-  background-position: 
-}
-*/
 
 hr {
   opacity: 0.3;
@@ -183,9 +161,6 @@ div.list {
 }
 
 .list{
- /*
- opacity: 0.8;
- */
  background-color: #ffffff;
 }
 
